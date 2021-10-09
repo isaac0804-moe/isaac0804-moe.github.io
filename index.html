@@ -3,20 +3,20 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<meta charset="UTF-8">
-		<title>First anniversary of love</title>
+		<title>A Gift For Cheryl</title>
 		<link rel="stylesheet" type="text/css" href="./css/format.css">
 	</head>
 
 	<body style="margin:0px">
 		<audio autoplay loop>
-			<source src="music/music.mp3" type="audio/mpeg">
+			<source src="music/will.mp3" type="audio/mpeg">
 			Your browser does not support the audio.
 		</audio>
 		<canvas></canvas>
 		<div id="imgTxt">
 			<span id="Txt"></span> <br />
 			<span id="tmp"></span>
-			<img id="img" src="">
+			<img id="img" height="500" src="">
 		</div>
 		<div id="heartTxt">
 			<span id="clickMe">Click!</span>
@@ -45,27 +45,70 @@
 			var flag = 1;
 			var myImage = document.getElementById("img");
 			var myTxt = document.getElementById("Txt");
-			var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png", 
-			"pic/pic7.png", "pic/pic8.png", "pic/pic9.png", "pic/pic10.png", "pic/pic11.png", "pic/pic12.png", "pic/pic13.png",
-			"pic/pic14.png", "pic/pic15.png", "pic/pic16.png"];
+			var imageArray = [
+				"pic/1.jpg", 
+				"pic/2.jpg", 
+				"pic/3.jpg", 
+				"pic/4.jpg", 
+				"pic/5.jpg", 
+				"pic/6.jpg", 
+				"pic/7.jpg", 
+				"pic/8.jpg", 
+				"pic/9.jpg", 
+				"pic/10.jpg", 
+				"pic/11.jpg", 
+				"pic/12.jpg", 
+				"pic/13.jpg", 
+				"pic/14.jpg", 
+				"pic/15.jpg", 
+				"pic/16.jpg", 
+				"pic/17.jpg", 
+				"pic/18.jpg", 
+				"pic/19.jpg", 
+				"pic/20.jpg", 
+				"pic/21.jpg", 
+				"pic/22.jpg", 
+				"pic/23.jpg", 
+				"pic/24.jpg", 
+				"pic/25.jpg", 
+				"pic/26.jpg", 
+				"pic/31.jpg", 
+				"pic/32.jpg", 
+				"pic/33.jpg", 
+				"pic/34.jpg"];
 			var imageIndex = 0;
 			var txtArray = [
-				"你好哇，小可爱~", 
-				"我们第一次见面的时候，女票认真的小眼神，嘻嘻", 
-				"当时我也有在比心哦~(｡･ω･｡)ﾉ♡",
-				"第一次去重庆见女票, 小仙女出现啦", 
-				"江边，今夜月色真美", 
-				"牵爪爪散步，开心~o(≧v≦)o", 
-				"咳咳，老大不小了还写情书，真是让人害羞(/ω＼)",
-				"超级喜欢女票送的兔兔和胡萝卜!!!", 
-				"举手手，我是最可爱的(･∀･)", 
-				"同款举手手（好吧，还是女票可爱）", 
-				"哇哇哇，这么可爱犯规啦", 
-				"下次去旅游可以叫上我一起吗~", 
-				"说，我叠的星星好不好看٩(๑òωó๑)۶", 
-				"洪崖洞买的邱邱~", 
-				"女票女票，我爱你~", 
-				"哒哒哒，逃~"];
+				"一切一切的起点，从这一天开始。",
+				"直男勇敢尬聊中。。。",
+				"不过我依然坚持（只是这尴尬癌真的是没救了",
+				"您开始给我说故事~~",
+				"然后我们开始了故事接龙~",
+				"潘多拉盒就在平常的一天被打开了，心疼",
+				"我们感情急速升温，您开始撩人了！！！",
+				"然后我也学会了~(｡･ω･｡)ﾉ♡",
+				"生日会上发生的事情，您还记得吗？那时真的好开心 o(≧v≦)o",
+				"我豁出去了！！！",
+				"您答应了，然后我秒破气氛。。。",
+				"于是就开始了小两口的生活 (/ω＼)",
+				"阿斯丝丝丝丝丝丝丝丝~ （以下省略一万字。。。",
+				"宝贝最好了~~一直给我（私房）照片~~",
+				"战利品是小仙女，开心~o(≧v≦)o",
+				"出门时给您特制的礼物，您还收着吗？",
+				"因为您，我喜欢上了钢琴，也改变了我好多好多？",
+				"这是我们的日常，逃~(･∀･)",
+				"要去训练了，拜拜",
+				"出去喝茶的我们，算是第一次约会吧~",
+				"第一场庆祝您的生日~ (･∀･)",
+				"五天后又是第一次的情人节~ (/ω＼)",
+				"然后到您为我庆生了",
+				"还准备了惊喜 （泪崩",
+				"很快地，一年过去了~",
+				"分开后第二次的见面，我的宝贝更美了 ~(｡･ω･｡)ﾉ♡",
+				"又到了您的生日，我没有准备什么礼物 （汉",
+				"五天后又是情人节~~ （依然没有礼物",
+				"然后到了我的生日，开心 ~o(≧v≦)o",
+				"今天就是我们在一起的两周年了，不长不短。我们两个在这段旅程中都改变了不少，\
+				但唯一不变的是爱着彼此的心。希望未来，依然有您。",];
 			 var len = imageArray.length;
 			var t = 0;
 		</script>
