@@ -139,8 +139,8 @@ function creatMountainRange(mountainAmount, height, color){
 
 // Implementation
 const backgroundGradient = c.createLinearGradient(0, 0, canvas.width, canvas.height)
-backgroundGradient.addColorStop(0, '#171e26')
-backgroundGradient.addColorStop(1, '#3f586b')
+backgroundGradient.addColorStop(0, '#050D22')
+backgroundGradient.addColorStop(1, '#1B5095')
 
 let stars
 let miniStars
