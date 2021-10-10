@@ -6,9 +6,9 @@ var val = 0;
 function timer(){
 	var start = new Date(2019, 9, 11, 1, 44);
 	var t = new Date() - start;
-	var y = Math.floor(t / 1000 / 60 / 60 / 24 / 365.5);
-	var d = Math.floor(t / 1000 / 60 / 60 / 24 % 365.5);
 	var h = Math.floor(t / 1000 / 60 / 60 % 24);
+	var d = Math.floor((t / 1000 / 60 / 60 / 24 - 1) % 365);
+	var y = Math.floor((t / 1000 / 60 / 60 / 24 - 1) / 365);
 	if(h < 10){
 		h = "0" + h;
 	}
