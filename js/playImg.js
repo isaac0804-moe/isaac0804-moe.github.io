@@ -1,5 +1,6 @@
 
 var btn = document.getElementById("heartTxt");
+var x = document.getElementById("player");
 btn.style.opacity = 0;
 var btnVal = 0;
 
@@ -25,9 +26,9 @@ function play(){
 	document.getElementById("typeDiv").style.opacity = flag;
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
 	if(t == 0){
-		setInterval(showImage, 8350);
+		showImage();
+		setInterval(showImage, 8667);
 	}
-	var x = document.getElementById("player");
 	x.play();
 	t++;
 }
